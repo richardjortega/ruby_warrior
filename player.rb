@@ -1,6 +1,11 @@
 require 'debugger'
 
 class Player
+
+  
+
+
+  
   def equip_weapon(target)
   	case target
   		when "Wizard"
@@ -11,11 +16,27 @@ class Player
   	end
   end
 
-  def observe()
+  def observe
   end
 
-  def theatened(look_array)
-  	look_array
+  def threatened?
+  	warrior looks in front
+  	warrior look in back
+  	if archer we are threatened
+  	if wizard in any position except last we are threatened
+  	if sludge in first position we are threatened
+  	else heal yourself if less than max health
   end
+
+  def can_move?
+ 	safe left move_direction
+ 	safe right move_direction
+  end
+
+  def move_direction
+
+  end
+
+
 
 end
